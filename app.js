@@ -1,27 +1,18 @@
-/*
-    FORMATO DE CADA TAREA
-        - titulo: string
-        - status: string (
-           * terminada
-           * pendiente
-         )
-*/
-
+let nueva = []
 exports.leerTareas = function () {
-    /*
-        En esta función debes leer y retornar las tareas registradas.
-    */
+    for (let i=0;i< nueva.lenght; i++){
+        let nuev= nueva.push(nueva[i]);
+    }
+    return nueva
 }
-
 exports.agregarTarea = function (tarea) {
-    /*
-        Registra y guarda una nueva tarea.
-    */
+    
+    let count = nueva.push(tarea);
+    return nueva
 }
-
 exports.filtrarTareasPorEstado = function (estado) {
-    /*
-        En esta función debes de leer las tareas y retornar las que tengan el estado que se
-        manda en el parametro.
-    */
+    let filtro= nueva.filter(function(el){
+        return el.status == estado;
+    })
+    return filtro
 }
